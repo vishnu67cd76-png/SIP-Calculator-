@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0"/>
+<title>SIP CALCULATOR</title>
+<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!--purpose:Helps users calculate future value of
+SIP(monthly investment,years,and interset rate)
+
+Features :
+
+input: monthly investment(rupees)
+       investment period (years)
+	   Expected return rate (years)
+output: Total investment amount	   
+        Estimated return
+		Total future value-->
+<div class="container">
+<h2>SIP calculator</h2>
+<label for="monthly">Monthly investment(rupees)</label>
+<input type="number" id="monthly" placeholder="eg: 10000"/>
+
+<label for="years">Investment period(years)</label>
+<input type="number" id="years" placeholder="eg: 10">
+
+<label for="rate">Expected return rate(%)</label>
+<input type="number" id="rate" placeholder="eg: 12%">
+
+<button onclick="CalucalteSip()">Calculate</button>
+<div class="result" id="result">
+<p>Total invested: 0 rupees</p>
+<p>Estimated returns: 0 rupees</p>
+<p>Total value: 0 rupees</p>
+<p class="disclaimer">Mathematically accurate...</p>
+<p class="disclaimer2">Practically in real life around 98-99% depending on market movement</p>
+<p class="disclaimer3">This calcultor is for educational purposes only. Past performance doesn't guarantee future results. consult a financial advisor for investment decisions</p>
+</div>
+</div>
+<!-- How to run it
+1. copy the above code into a new file and name it sipCalculator.html or any name you want
+2. connect the script.js and style.css
+3. open it in your browser
+4. Enter monthly SIP, years, and expected return (like 12%) and hit the calculate button
+
+  You will instanly see:
+  
+  Total invested amount,
+  
+  Estimated profit and,
+  
+  total future value.
+-->
+<script src="script.js"></script>
+</body>
+</html>
